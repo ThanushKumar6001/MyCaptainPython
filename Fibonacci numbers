@@ -1,0 +1,13 @@
+num=int(input("Enter the range="))
+i=0
+First_val=0
+Second_val=1
+while(i<num):
+    if(i<=1):
+        Next=i
+    else:
+        Next=First_val+Second_val
+        First_val=Second_val
+        Second_val=Next
+    print(Next)
+    i=i+1
